@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,31 +16,56 @@
 
 	<style>
 		body {
-			margin:0;
-			padding:0;
+			margin: 0;
+			padding: 0;
 			overflow: hidden;
 		}
+
 		canvas {
-			margin:auto;
+			padding: 0;
+			margin: auto;
+			display: block;
+			width: 800px;
+
 		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+		.red {
+			color: #FF0000;
+		}
+
+		.yellow-background {
+			background-color: Yellow;
+		}
+
+		​
 	</style>
 </head>
-<body>
+
+<body style="text-align: center">
+
 	<script src="dat.gui.js"></script>
 	<script src="class.js"></script>
 	<script src="sketch.js"></script>
-	<script>
-	console.log('working')
+	<p>Particle Collisions</p>
 
+	<div id="sketch-holder">
+		<!-- the sketch is here! -->
+	</div>
+	<div id="instructions">
+		<p style="text-align: center">
+			<span class="bold red">[Double Click]</span> for <span class="bold yellow-background">creating</span> a big ball<br>
+			press <span class="bold">[p]</span> for <span class="bold yellow-background">pausing</span> the collision <br>
+			press <span class="bold">[t]</span> for <span class="bold yellow-background">tracing</span> the big balls <br>
+			press <span class="bold">[c]</span> for <span class="bold yellow-background">clearing</span> the trace <br>
+			<span class="bold">[Click on the ball]</span> for <span class="bold yellow-background">removing</span> the ball
+			the collision <br>
+		</p>
+	</div>
 
-	 var mySpan = document.createElement("span");
-	 mySpan.innerHTML = "This is my span!";
-
-	 mySpan.style.color = "red";
-	 document.body.appendChild(mySpan);
-	 var somename = new dat.GUI()
-	 alert("Why does the span change after this alert? Not before?");
-
-	</script>
 </body>
+
 </html>
