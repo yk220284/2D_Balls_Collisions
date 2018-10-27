@@ -107,11 +107,14 @@ class BigBall extends BouncyBall {
 		this.history = [];
 	}
 
-	move() {
-		super.move();
+	show() {
+		super.show();
 		if (trace) {
 			let v = createVector(this.x, this.y);
 			this.history.push(v);
+			if (this.history.length > 1000) {
+				this.history.splice(0, 1);
+			}
 
 			for (let i = 0; i < this.history.length; i++) {
 				let v = this.history[i];
