@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Theme Made By www.w3schools.com - No Copyright -->
+	<title>2D Balls Collisions</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>p5project2</title>
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="libraries/p5.js"></script>
 	<script src="libraries/p5.dom.js"></script>
-	<script src="libraries/p5.sound.js"></script>
-
-
-
 	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-		}
-
-		canvas {
-			padding: 0;
-			margin: auto;
-			display: block;
-			width: 800px;
-
-		}
-
-		.bold {
+		.bg-1 { 
+      background-color: #1abc9c;
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d;
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff;
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f;
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  .bold {
 			font-weight: bold;
 		}
 
@@ -37,34 +52,60 @@
 			color: #FF0000;
 		}
 
-		.yellow-background {
-			background-color: Yellow;
-		}
-
-		​
-	</style>
+  </style>
 </head>
 
-<body style="text-align: center">
-
-	<script src="dat.gui.js"></script>
+<body>
 	<script src="class.js"></script>
 	<script src="sketch.js"></script>
-	<p>Particle Collisions</p>
 
-	<div id="sketch-holder">
-		<!-- the sketch is here! -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">A P5.js Project by Yankang</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Particle Collisions</a></li>
+					<!-- <li><a href="#">Project 1</a></li>
+                    <li><a href="#">Project 2</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid bg-1 text-center">
+		<h3>Click the window below!</h3>
+		<div id="sketch-holder">
+			<!-- the sketch is here! -->
+		</div>
 	</div>
-	<div id="instructions">
-		<p style="text-align: center">
-			<span class="bold red">[Double Click]</span> for <span class="bold yellow-background">creating</span> a big ball<br>
-			press <span class="bold">[p]</span> for <span class="bold yellow-background">pausing</span> the collision <br>
-			press <span class="bold">[t]</span> for <span class="bold yellow-background">tracing</span> the big balls <br>
-			press <span class="bold">[c]</span> for <span class="bold yellow-background">clearing</span> the trace <br>
-			<span class="bold">[Click on the ball]</span> for <span class="bold yellow-background">removing</span> the ball
-			the collision <br>
-		</p>
+
+
+	<div class="container-fluid bg-2 text-center">
+		<h3>Instructions</h3>
+		<p><span class="bold red">[Double Click]</span> for <span class="bold">creating</span> a big
+			ball<br>
+			press <span class="bold">[p]</span> for <span class="bold">pausing</span> the collision
+			<br>
+			press <span class="bold">[t]</span> for <span class="bold">tracing</span> the big balls
+			<br>
+			press <span class="bold">[c]</span> for <span class="bold">clearing</span> the trace <br>
+			<span class="bold">[Click on the ball]</span> for <span class="bold">removing</span> the
+			ball
+			the collision <br> </p>
 	</div>
+
+
+
+	<footer class="container-fluid bg-4 text-center">
+		<p>Source code on <a href="https://github.com/yk220284/2D_Balls_Collisions">GitHub page</a></p>
+	</footer>
 
 </body>
 

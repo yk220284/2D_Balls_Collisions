@@ -29,7 +29,7 @@ function createBall(ox, oy) {
 var canvas
 
 function setup() {
-	canvas = createCanvas(400, 300);
+	canvas = createCanvas(600, 400);
 	canvas.parent('sketch-holder');
 	for (let i = 0; i < num_of_balls; i++) {
 		createBall(Math.random() * canvas.width, Math.random() * canvas.height);
