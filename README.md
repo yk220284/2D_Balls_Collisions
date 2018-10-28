@@ -1,7 +1,9 @@
-# 2D_Balls_Collisions
+## 2D Balls Collisions
 
-Used P5.js library to model Brownian motion with multiple features such as mouse and 
+# Tools
+Used Node.js and P5.js library to model Brownian motion with multiple features such as mouse and 
 keyboard control for adding objects and tracking their movements. 
+Implemented bootstrap and deployed on github.
 See it in action [here](https://yk220284.github.io/2D_Balls_Collisions.github.io/).
 
 # 2D Momentum Equations
